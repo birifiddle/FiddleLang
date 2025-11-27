@@ -37,3 +37,37 @@ O compilador faz análise léxica, sintática, semântica e validação de tipos
 int x;
 float y;
 string nome;
+
+/fiddlelang-compiler
+│
+├── docs/
+│   ├── DetalhamentoLinguagem.pdf
+│   ├── Diagramas/
+│   └── Exemplos/
+│
+├── grammar/
+│   ├── FiddleLangLexer.g4
+│   └── FiddleLangParser.g4
+│
+├── src/
+│   ├── Main.java
+│   ├── ErrorListener.java
+│   ├── SymbolTable.java
+│   ├── TypeChecker.java
+│   ├── CodeGenerator.java
+│   ├── FiddleLangVisitor.java
+│   └── FiddleLangBaseVisitor.java
+│
+├── tests/
+│   ├── exemplo1.fdl
+│   ├── exemplo2.fdl
+│   ├── exemploErro1.fdl
+│   └── exemploCompleto.fdl
+│
+├── libs/
+│   └── antlr-4.13.1-complete.jar
+│
+├── build/
+│   └── arquivos gerados pelo ANTLR
+│
+└── README.md
