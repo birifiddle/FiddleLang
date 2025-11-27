@@ -1,34 +1,39 @@
-# Compilador — Trabalho de Teoria da Computação e Compiladores
+# FiddleLang — Compilador em ANTLR4
 
-Este projeto implementa um compilador completo utilizando **ANTLR4**, baseado em uma linguagem criada pelo grupo.  
-O compilador realiza análise léxica, sintática e semântica, além de gerar código alvo e validar tipos, escopos e estruturas exigidas no enunciado.
+Este projeto implementa um compilador completo para a linguagem **FiddleLang**, desenvolvido utilizando **ANTLR4** como parte do trabalho de Teoria da Computação e Compiladores.
+
+O compilador faz análise léxica, sintática, semântica e validação de tipos, além de permitir geração de código alvo.
 
 ---
 
 ## 🎯 Objetivos do Projeto
-Desenvolver um compilador funcional contendo:
 
-- Gramática completa ANTLR sem recursão à esquerda e sem produções vazias  
-- 3 tipos de variáveis  
-- Estrutura `if ... else`  
-- Pelo menos duas estruturas de repetição (`while`, `do...while`, `for`)  
-- Expressões matemáticas com precedência correta  
-- Atribuições  
-- Comandos `scanf` e `printf`  
-- Aceitar números decimais  
-- Ignorar espaços, tabs e quebra de linha  
-- Exibir erros detalhados  
-- Confirmar quando o código está correto  
-- **Extra:** verificação de tipos, escopo e geração de código (Java ou C)
+- Definir e implementar a gramática da linguagem FiddleLang  
+- Criar o analisador léxico e sintático usando ANTLR4  
+- Implementar verificações semânticas:
+  - Tipos
+  - Escopo
+  - Uso de variáveis declaradas
+  - Operações válidas para cada tipo  
+- Implementar estruturas obrigatórias:
+  - 3 tipos de variáveis (`int`, `float`, `string`)
+  - `if ... else`
+  - Repetições: `while`, `do ... while`, `for`
+  - Precedência correta em expressões
+  - Atribuições
+  - `scanf` e `printf`
+  - Aceitar números decimais
+  - Ignorar tabs, espaços e quebras de linha
+- Exibir erros quando existirem  
+- Informar quando o código está correto  
+- **Extra:** Geração de código em Java ou C  
 
 ---
 
-## 📁 Estrutura da Linguagem Criada
-A linguagem possui:
+## 🧩 Estrutura da Linguagem FiddleLang
 
-- **Tipos**: `int`, `float`, `string`
-- **Declarações**:
-  ```txt
-  int x;
-  float y;
-  string nome;
+### • Declaração de variáveis
+```txt
+int x;
+float y;
+string nome;
