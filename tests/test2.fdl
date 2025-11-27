@@ -1,0 +1,8 @@
+int n;
+n = 10;
+
+if (n > 5) {
+    printf(n);
+} else {
+    printf(0);
+}
